@@ -9,7 +9,7 @@
     "precommit": "npm run build && npm test && npm run tslint",
     "tslint": "tslint src/**/*.ts{,x}",
     "test": "npm run build && ava",
-    "security": "snyk test",
+    "security": "snyk test || true",
     "init": "ask init && now login",
     "create-skill": "node js/skill-upload/create-skill-json.js",
     "deploy:now": "now --public && now alias",
@@ -62,15 +62,15 @@
   "devDependencies": {
     "ask-cli": "^1.1.0",
     "husky": "^0.14.3",
-    "now": "^9.3.2",
+    "now": "^10.2.1",
     "opn": "^5.2.0",
     "tslint": "^5.9.1"
   },
   "dependencies": {
     "@types/node": "^9.4.0",
-    "alexa-app": "^4.2.0",
+    "alexa-app": "^4.2.1",
     "alexa-utterances": "^0.2.1",
-    "ava": "^0.24.0",
+    "ava": "^0.25.0",
     "clipboardy": "^1.2.2",
     "coveralls": "^3.0.0",
     "express": "^4.16.2",

@@ -1,429 +1,78 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.10.1
+version: v1.10.2
 # ignores vulnerabilities until expiry date; change duration by modifying expiry date
 ignore:
-  'npm:crypto-browserify:20140722':
-    - ask-cli > aws-sdk > crypto-browserify:
-        reason: no fix
-        expires: '2018-02-05T08:50:24.701Z'
+  'npm:braces:20180219':
+    - nyc > micromatch > braces:
+        reason: None given
+        expires: '2018-04-26T09:15:07.590Z'
+    - nyc > test-exclude > micromatch > braces:
+        reason: None given
+        expires: '2018-04-26T09:15:07.590Z'
+    - ava > chokidar > anymatch > micromatch > braces:
+        reason: None given
+        expires: '2018-04-26T09:15:07.590Z'
   'npm:hoek:20180212':
     - ava > chokidar > fsevents > node-pre-gyp > hawk > hoek:
         reason: None given
-        expires: '2018-03-19T08:06:29.945Z'
-      coveralls > log-driver > codecov.io > request > hawk > hoek:
-        reason: None given
-        expires: '2018-03-19T14:50:29.341Z'
-    - ava > chokidar > fsevents > node-pre-gyp > hawk > boom > hoek:
-        reason: None given
-        expires: '2018-03-19T08:06:29.946Z'
-    - ava > chokidar > fsevents > node-pre-gyp > hawk > sntp > hoek:
-        reason: None given
-        expires: '2018-03-19T08:06:29.946Z'
-    - ava > chokidar > fsevents > node-pre-gyp > hawk > cryptiles > boom > hoek:
-        reason: None given
-        expires: '2018-03-19T08:06:29.946Z'
-    - ava > chokidar > fsevents > node-pre-gyp > request > hawk > hoek:
-        reason: none available
-        expires: '2018-03-19T08:06:29.946Z'
-    - ava > chokidar > fsevents > node-pre-gyp > request > hawk > boom > hoek:
-        reason: None given
-        expires: '2018-03-19T08:06:29.946Z'
-    - ava > chokidar > fsevents > node-pre-gyp > request > hawk > sntp > hoek:
-        reason: None given
-        expires: '2018-03-19T08:06:29.946Z'
-    - ava > chokidar > fsevents > node-pre-gyp > request > hawk > cryptiles > boom > hoek:
-        reason: None given
-        expires: '2018-03-19T08:06:29.946Z'
-    - imgur > request > hawk > boom > hoek:
-        reason: None given
-        expires: '2018-03-19T14:49:27.969Z'
-    - imgur > request > hawk > sntp > hoek:
-        reason: None given
-        expires: '2018-03-19T14:49:27.969Z'
-    - imgur > request > hawk > cryptiles > boom > hoek:
-        reason: None given
-        expires: '2018-03-19T14:49:27.969Z'
-    - imgur > request > hawk > hoek:
-        reason: None given
-        expires: '2018-03-19T14:49:27.969Z'
-    - coveralls > log-driver > codecov.io > request > hawk > boom > hoek:
-        reason: None given
-        expires: '2018-03-19T14:49:27.970Z'
-    - coveralls > log-driver > codecov.io > request > hawk > sntp > hoek:
-        reason: None given
-        expires: '2018-03-19T14:49:27.970Z'
-    - coveralls > log-driver > codecov.io > request > hawk > cryptiles > boom > hoek:
-        reason: None given
-        expires: '2018-03-19T14:49:27.970Z'
-    - ava > chokidar > fsevents > node-pre-gyp > hawk > hoek:
-        reason: None given
-        expires: '2018-03-19T14:49:27.970Z'
-    - ava > chokidar > fsevents > node-pre-gyp > hawk > boom > hoek:
-        reason: None given
-        expires: '2018-03-19T14:49:27.970Z'
-    - ava > chokidar > fsevents > node-pre-gyp > hawk > sntp > hoek:
-        reason: None given
-        expires: '2018-03-19T14:49:27.970Z'
-    - ava > chokidar > fsevents > node-pre-gyp > hawk > cryptiles > boom > hoek:
-        reason: None given
-        expires: '2018-03-19T14:49:27.970Z'
+        expires: '2018-04-26T09:15:07.590Z'
     - ava > chokidar > fsevents > node-pre-gyp > request > hawk > hoek:
         reason: None given
-        expires: '2018-03-19T14:49:27.970Z'
+        expires: '2018-04-26T09:15:07.590Z'
+    - ava > chokidar > fsevents > node-pre-gyp > hawk > boom > hoek:
+        reason: None given
+        expires: '2018-04-26T09:15:07.590Z'
     - ava > chokidar > fsevents > node-pre-gyp > request > hawk > boom > hoek:
         reason: None given
-        expires: '2018-03-19T14:49:27.971Z'
-    - ava > chokidar > fsevents > node-pre-gyp > request > hawk > sntp > hoek:
+        expires: '2018-04-26T09:15:07.591Z'
+    - ava > chokidar > fsevents > node-pre-gyp > hawk > cryptiles > boom > hoek:
         reason: None given
-        expires: '2018-03-19T14:49:27.971Z'
+        expires: '2018-04-26T09:15:07.591Z'
     - ava > chokidar > fsevents > node-pre-gyp > request > hawk > cryptiles > boom > hoek:
         reason: None given
-        expires: '2018-03-19T14:49:27.971Z'
-    - alexa-app > alexa-verifier-middleware > alexa-verifier > request > hawk > hoek:
+        expires: '2018-04-26T09:15:07.591Z'
+    - ava > chokidar > fsevents > node-pre-gyp > hawk > sntp > hoek:
         reason: None given
-        expires: '2018-03-19T14:49:27.965Z'
-    - alexa-app > alexa-verifier-middleware > alexa-verifier > request > hawk > boom > hoek:
+        expires: '2018-04-26T09:15:07.591Z'
+    - ava > chokidar > fsevents > node-pre-gyp > request > hawk > sntp > hoek:
         reason: None given
-        expires: '2018-03-19T14:49:27.965Z'
-    - alexa-app > alexa-verifier-middleware > alexa-verifier > request > hawk > sntp > hoek:
-        reason: None given
-        expires: '2018-03-19T14:49:27.965Z'
-    - alexa-app > alexa-verifier-middleware > alexa-verifier > request > hawk > cryptiles > boom > hoek:
-        reason: None given
-        expires: '2018-03-19T14:49:27.965Z'
-    - coveralls > request > hawk > cryptiles > boom > hoek:
-        reason: None given
-        expires: '2018-03-19T14:49:27.969Z'
-    - coveralls > request > hawk > hoek:
-        reason: None given
-        expires: '2018-03-19T14:49:27.969Z'
-    - coveralls > request > hawk > boom > hoek:
-        reason: None given
-        expires: '2018-03-19T14:49:27.969Z'
-    - coveralls > request > hawk > sntp > hoek:
-        reason: None given
-        expires: '2018-03-19T14:49:27.969Z'
+        expires: '2018-04-26T09:15:07.591Z'
   'npm:lodash:20180130':
     - nyc > istanbul-lib-instrument > babel-types > lodash:
         reason: None given
-        expires: '2018-03-19T08:06:29.946Z'
-    - nyc > istanbul-lib-instrument > babel-generator > lodash:
-        reason: None given
-        expires: '2018-03-19T08:06:29.946Z'
+        expires: '2018-04-26T09:15:07.591Z'
     - nyc > istanbul-lib-instrument > babel-generator > babel-types > lodash:
         reason: None given
-        expires: '2018-03-19T08:06:29.946Z'
-    - nyc > istanbul-lib-instrument > babel-traverse > lodash:
-        reason: None given
-        expires: '2018-03-19T08:06:29.946Z'
+        expires: '2018-04-26T09:15:07.591Z'
     - nyc > istanbul-lib-instrument > babel-traverse > babel-types > lodash:
         reason: None given
-        expires: '2018-03-19T08:06:29.946Z'
-    - nyc > istanbul-lib-instrument > babel-template > lodash:
-        reason: None given
-        expires: '2018-03-19T08:06:29.946Z'
-    - nyc > istanbul-lib-instrument > babel-template > babel-types > lodash:
-        reason: None given
-        expires: '2018-03-19T08:06:29.946Z'
-    - nyc > istanbul-lib-instrument > babel-template > babel-traverse > lodash:
-        reason: None given
-        expires: '2018-03-19T08:06:29.946Z'
+        expires: '2018-04-26T09:15:07.591Z'
     - nyc > istanbul-lib-instrument > babel-template > babel-traverse > babel-types > lodash:
         reason: None given
-        expires: '2018-03-19T08:06:29.946Z'
-    - ava > @ava/babel-preset-stage-4 > babel-plugin-transform-async-to-generator > babel-helper-remap-async-to-generator > babel-template > babel-traverse > babel-types > lodash:
+        expires: '2018-04-26T09:15:07.591Z'
+    - nyc > istanbul-lib-instrument > babel-template > babel-types > lodash:
         reason: None given
-        expires: '2018-03-19T14:49:27.966Z'
-    - ava > @ava/babel-preset-stage-4 > babel-plugin-transform-async-to-generator > babel-helper-remap-async-to-generator > babel-template > babel-traverse > lodash:
-        reason: None given
-        expires: '2018-03-19T14:49:27.966Z'
-    - ava > @ava/babel-preset-stage-4 > babel-plugin-transform-async-to-generator > babel-helper-remap-async-to-generator > babel-template > babel-types > lodash:
-        reason: None given
-        expires: '2018-03-19T14:49:27.966Z'
-    - ava > @ava/babel-preset-stage-4 > babel-plugin-transform-async-to-generator > babel-helper-remap-async-to-generator > babel-template > lodash:
-        reason: None given
-        expires: '2018-03-19T14:49:27.966Z'
-    - ava > babel-generator > lodash:
-        reason: None given
-        expires: '2018-03-19T14:49:27.966Z'
-    - ava > babel-generator > babel-types > lodash:
-        reason: None given
-        expires: '2018-03-19T14:49:27.966Z'
-    - ava > @ava/babel-preset-transform-test-files > babel-plugin-espower > babel-generator > lodash:
-        reason: None given
-        expires: '2018-03-19T14:49:27.966Z'
-    - ava > @ava/babel-preset-transform-test-files > babel-plugin-espower > babel-generator > babel-types > lodash:
-        reason: None given
-        expires: '2018-03-19T14:49:27.966Z'
-    - ava > babel-core > lodash:
-        reason: None given
-        expires: '2018-03-19T14:49:27.966Z'
-    - ava > babel-core > babel-register > lodash:
-        reason: None given
-        expires: '2018-03-19T14:49:27.966Z'
-    - ava > babel-core > babel-types > lodash:
-        reason: None given
-        expires: '2018-03-19T14:49:27.966Z'
-    - ava > babel-core > babel-generator > lodash:
-        reason: None given
-        expires: '2018-03-19T14:49:27.966Z'
-    - ava > babel-core > babel-generator > babel-types > lodash:
-        reason: None given
-        expires: '2018-03-19T14:49:27.966Z'
-    - ava > babel-core > babel-traverse > lodash:
-        reason: None given
-        expires: '2018-03-19T14:49:27.966Z'
-    - ava > babel-core > babel-traverse > babel-types > lodash:
-        reason: None given
-        expires: '2018-03-19T14:49:27.966Z'
-    - ava > babel-core > babel-template > lodash:
-        reason: None given
-        expires: '2018-03-19T14:49:27.966Z'
-    - ava > babel-core > babel-template > babel-types > lodash:
-        reason: None given
-        expires: '2018-03-19T14:49:27.966Z'
-    - ava > babel-core > babel-template > babel-traverse > lodash:
-        reason: None given
-        expires: '2018-03-19T14:49:27.966Z'
-    - ava > babel-core > babel-template > babel-traverse > babel-types > lodash:
-        reason: None given
-        expires: '2018-03-19T14:49:27.966Z'
-    - ava > babel-core > babel-helpers > babel-template > lodash:
-        reason: None given
-        expires: '2018-03-19T14:49:27.966Z'
-    - ava > babel-core > babel-helpers > babel-template > babel-types > lodash:
-        reason: None given
-        expires: '2018-03-19T14:49:27.966Z'
-    - ava > babel-core > babel-helpers > babel-template > babel-traverse > lodash:
-        reason: None given
-        expires: '2018-03-19T14:49:27.967Z'
-    - ava > babel-core > babel-helpers > babel-template > babel-traverse > babel-types > lodash:
-        reason: None given
-        expires: '2018-03-19T14:49:27.967Z'
-    - ava > @ava/babel-preset-stage-4 > babel-plugin-transform-es2015-sticky-regex > babel-types > lodash:
-        reason: None given
-        expires: '2018-03-19T14:49:27.967Z'
-    - ava > @ava/babel-preset-stage-4 > babel-plugin-transform-es2015-sticky-regex > babel-helper-regex > lodash:
-        reason: None given
-        expires: '2018-03-19T14:49:27.967Z'
-    - ava > @ava/babel-preset-stage-4 > babel-plugin-transform-es2015-sticky-regex > babel-helper-regex > babel-types > lodash:
-        reason: None given
-        expires: '2018-03-19T14:49:27.967Z'
-    - ava > @ava/babel-preset-stage-4 > babel-plugin-transform-es2015-unicode-regex > babel-helper-regex > lodash:
-        reason: None given
-        expires: '2018-03-19T14:49:27.967Z'
-    - ava > @ava/babel-preset-stage-4 > babel-plugin-transform-es2015-unicode-regex > babel-helper-regex > babel-types > lodash:
-        reason: None given
-        expires: '2018-03-19T14:49:27.967Z'
-    - ava > @ava/babel-preset-stage-4 > babel-plugin-transform-es2015-modules-commonjs > babel-types > lodash:
-        reason: None given
-        expires: '2018-03-19T14:49:27.967Z'
-    - ava > @ava/babel-preset-stage-4 > babel-plugin-transform-es2015-modules-commonjs > babel-plugin-transform-strict-mode > babel-types > lodash:
-        reason: None given
-        expires: '2018-03-19T14:49:27.967Z'
-    - ava > @ava/babel-preset-stage-4 > babel-plugin-transform-async-to-generator > babel-helper-remap-async-to-generator > babel-traverse > babel-types > lodash:
-        reason: None given
-        expires: '2018-03-19T14:49:27.967Z'
-    - ava > @ava/babel-preset-stage-4 > babel-plugin-transform-es2015-modules-commonjs > babel-template > babel-types > lodash:
-        reason: None given
-        expires: '2018-03-19T14:49:27.967Z'
-    - ava > @ava/babel-preset-stage-4 > babel-plugin-transform-es2015-modules-commonjs > babel-template > babel-traverse > lodash:
-        reason: None given
-        expires: '2018-03-19T14:49:27.967Z'
-    - ava > @ava/babel-preset-stage-4 > babel-plugin-transform-es2015-modules-commonjs > babel-template > babel-traverse > babel-types > lodash:
-        reason: None given
-        expires: '2018-03-19T14:49:27.967Z'
-    - ava > @ava/babel-preset-stage-4 > babel-plugin-transform-es2015-parameters > babel-types > lodash:
-        reason: None given
-        expires: '2018-03-19T14:49:27.967Z'
-    - ava > @ava/babel-preset-stage-4 > babel-plugin-transform-es2015-parameters > babel-helper-get-function-arity > babel-types > lodash:
-        reason: None given
-        expires: '2018-03-19T14:49:27.967Z'
-    - ava > @ava/babel-preset-stage-4 > babel-plugin-transform-es2015-parameters > babel-traverse > lodash:
-        reason: None given
-        expires: '2018-03-19T14:49:27.967Z'
-    - ava > @ava/babel-preset-stage-4 > babel-plugin-transform-es2015-parameters > babel-traverse > babel-types > lodash:
-        reason: None given
-        expires: '2018-03-19T14:49:27.967Z'
-    - ava > @ava/babel-preset-stage-4 > babel-plugin-transform-es2015-parameters > babel-helper-call-delegate > babel-types > lodash:
-        reason: None given
-        expires: '2018-03-19T14:49:27.967Z'
-    - ava > @ava/babel-preset-stage-4 > babel-plugin-transform-es2015-parameters > babel-helper-call-delegate > babel-helper-hoist-variables > babel-types > lodash:
-        reason: None given
-        expires: '2018-03-19T14:49:27.968Z'
-    - ava > @ava/babel-preset-stage-4 > babel-plugin-transform-es2015-parameters > babel-helper-call-delegate > babel-traverse > lodash:
-        reason: None given
-        expires: '2018-03-19T14:49:27.968Z'
-    - ava > @ava/babel-preset-stage-4 > babel-plugin-transform-es2015-parameters > babel-helper-call-delegate > babel-traverse > babel-types > lodash:
-        reason: None given
-        expires: '2018-03-19T14:49:27.968Z'
-    - ava > @ava/babel-preset-stage-4 > babel-plugin-transform-es2015-parameters > babel-template > lodash:
-        reason: None given
-        expires: '2018-03-19T14:49:27.968Z'
-    - ava > @ava/babel-preset-stage-4 > babel-plugin-transform-es2015-parameters > babel-template > babel-types > lodash:
-        reason: None given
-        expires: '2018-03-19T14:49:27.968Z'
-    - ava > @ava/babel-preset-stage-4 > babel-plugin-transform-es2015-parameters > babel-template > babel-traverse > lodash:
-        reason: None given
-        expires: '2018-03-19T14:49:27.968Z'
-    - ava > @ava/babel-preset-stage-4 > babel-plugin-transform-es2015-parameters > babel-template > babel-traverse > babel-types > lodash:
-        reason: None given
-        expires: '2018-03-19T14:49:27.968Z'
-    - ava > @ava/babel-preset-stage-4 > babel-plugin-transform-es2015-function-name > babel-types > lodash:
-        reason: None given
-        expires: '2018-03-19T14:49:27.968Z'
-    - ava > @ava/babel-preset-stage-4 > babel-plugin-transform-es2015-function-name > babel-helper-function-name > babel-types > lodash:
-        reason: None given
-        expires: '2018-03-19T14:49:27.968Z'
-    - ava > @ava/babel-preset-stage-4 > babel-plugin-transform-es2015-function-name > babel-helper-function-name > babel-helper-get-function-arity > babel-types > lodash:
-        reason: None given
-        expires: '2018-03-19T14:49:27.968Z'
-    - ava > @ava/babel-preset-stage-4 > babel-plugin-transform-es2015-function-name > babel-helper-function-name > babel-traverse > lodash:
-        reason: None given
-        expires: '2018-03-19T14:49:27.968Z'
-    - ava > @ava/babel-preset-stage-4 > babel-plugin-transform-es2015-function-name > babel-helper-function-name > babel-traverse > babel-types > lodash:
-        reason: None given
-        expires: '2018-03-19T14:49:27.968Z'
-    - ava > @ava/babel-preset-stage-4 > babel-plugin-transform-es2015-function-name > babel-helper-function-name > babel-template > lodash:
-        reason: None given
-        expires: '2018-03-19T14:49:27.968Z'
-    - ava > @ava/babel-preset-stage-4 > babel-plugin-transform-es2015-function-name > babel-helper-function-name > babel-template > babel-types > lodash:
-        reason: None given
-        expires: '2018-03-19T14:49:27.968Z'
-    - ava > @ava/babel-preset-stage-4 > babel-plugin-transform-es2015-function-name > babel-helper-function-name > babel-template > babel-traverse > lodash:
-        reason: None given
-        expires: '2018-03-19T14:49:27.968Z'
-    - ava > @ava/babel-preset-stage-4 > babel-plugin-transform-es2015-function-name > babel-helper-function-name > babel-template > babel-traverse > babel-types > lodash:
-        reason: None given
-        expires: '2018-03-19T14:49:27.969Z'
-    - ava > @ava/babel-preset-stage-4 > babel-plugin-transform-exponentiation-operator > babel-helper-builder-binary-assignment-operator-visitor > babel-types > lodash:
-        reason: None given
-        expires: '2018-03-19T14:49:27.969Z'
-    - ava > @ava/babel-preset-stage-4 > babel-plugin-transform-exponentiation-operator > babel-helper-builder-binary-assignment-operator-visitor > babel-helper-explode-assignable-expression > babel-types > lodash:
-        reason: None given
-        expires: '2018-03-19T14:49:27.969Z'
-    - ava > @ava/babel-preset-stage-4 > babel-plugin-transform-exponentiation-operator > babel-helper-builder-binary-assignment-operator-visitor > babel-helper-explode-assignable-expression > babel-traverse > lodash:
-        reason: None given
-        expires: '2018-03-19T14:49:27.969Z'
-    - ava > @ava/babel-preset-stage-4 > babel-plugin-transform-exponentiation-operator > babel-helper-builder-binary-assignment-operator-visitor > babel-helper-explode-assignable-expression > babel-traverse > babel-types > lodash:
-        reason: None given
-        expires: '2018-03-19T14:49:27.969Z'
-    - ava > @ava/babel-preset-stage-4 > babel-plugin-transform-async-to-generator > babel-helper-remap-async-to-generator > babel-types > lodash:
-        reason: None given
-        expires: '2018-03-19T14:49:27.969Z'
-    - ava > @ava/babel-preset-stage-4 > babel-plugin-transform-async-to-generator > babel-helper-remap-async-to-generator > babel-traverse > lodash:
-        reason: None given
-        expires: '2018-03-19T14:49:27.969Z'
-    - snyk > snyk-resolve-deps > lodash:
-        reason: None given
-        expires: '2018-03-19T14:49:27.969Z'
-    - snyk > snyk-go-plugin > graphlib > lodash:
-        reason: None given
-        expires: '2018-03-19T14:49:27.969Z'
-    - snyk > inquirer > lodash:
-        reason: None given
-        expires: '2018-03-19T14:49:27.970Z'
-    - snyk > snyk-nuget-plugin > xml2js > xmlbuilder > lodash:
-        reason: None given
-        expires: '2018-03-19T14:49:27.970Z'
-    - nyc > istanbul-lib-instrument > babel-types > lodash:
-        reason: None given
-        expires: '2018-03-19T14:49:27.971Z'
+        expires: '2018-04-26T09:15:07.591Z'
     - nyc > istanbul-lib-instrument > babel-generator > lodash:
         reason: None given
-        expires: '2018-03-19T14:49:27.971Z'
-    - nyc > istanbul-lib-instrument > babel-generator > babel-types > lodash:
-        reason: None given
-        expires: '2018-03-19T14:49:27.971Z'
+        expires: '2018-04-26T09:15:07.591Z'
     - nyc > istanbul-lib-instrument > babel-traverse > lodash:
         reason: None given
-        expires: '2018-03-19T14:49:27.971Z'
-    - nyc > istanbul-lib-instrument > babel-traverse > babel-types > lodash:
-        reason: None given
-        expires: '2018-03-19T14:49:27.971Z'
-    - nyc > istanbul-lib-instrument > babel-template > lodash:
-        reason: None given
-        expires: '2018-03-19T14:49:27.971Z'
-    - nyc > istanbul-lib-instrument > babel-template > babel-types > lodash:
-        reason: None given
-        expires: '2018-03-19T14:49:27.971Z'
+        expires: '2018-04-26T09:15:07.591Z'
     - nyc > istanbul-lib-instrument > babel-template > babel-traverse > lodash:
         reason: None given
-        expires: '2018-03-19T14:49:27.971Z'
-    - nyc > istanbul-lib-instrument > babel-template > babel-traverse > babel-types > lodash:
+        expires: '2018-04-26T09:15:07.591Z'
+    - nyc > istanbul-lib-instrument > babel-template > lodash:
         reason: None given
-        expires: '2018-03-19T14:49:27.972Z'
-    - ava > @ava/babel-preset-stage-4 > babel-plugin-transform-es2015-modules-commonjs > babel-template > lodash:
-        reason: None given
-        expires: '2018-03-19T14:49:27.965Z'
-    - ava > @ava/babel-preset-stage-4 > babel-plugin-transform-async-to-generator > babel-helper-remap-async-to-generator > babel-helper-function-name > babel-template > babel-traverse > lodash:
-        reason: None given
-        expires: '2018-03-19T14:49:27.965Z'
-    - ava > @ava/babel-preset-stage-4 > babel-plugin-transform-async-to-generator > babel-helper-remap-async-to-generator > babel-helper-function-name > babel-template > babel-types > lodash:
-        reason: None given
-        expires: '2018-03-19T14:49:27.965Z'
-    - ava > @ava/babel-preset-stage-4 > babel-plugin-transform-async-to-generator > babel-helper-remap-async-to-generator > babel-helper-function-name > babel-template > babel-traverse > babel-types > lodash:
-        reason: None given
-        expires: '2018-03-19T14:49:27.965Z'
-    - ava > @ava/babel-preset-stage-4 > babel-plugin-transform-async-to-generator > babel-helper-remap-async-to-generator > babel-helper-function-name > babel-template > lodash:
-        reason: None given
-        expires: '2018-03-19T14:49:27.965Z'
-    - ava > @ava/babel-preset-stage-4 > babel-plugin-transform-async-to-generator > babel-helper-remap-async-to-generator > babel-helper-function-name > babel-traverse > babel-types > lodash:
-        reason: None given
-        expires: '2018-03-19T14:49:27.965Z'
-    - ava > @ava/babel-preset-stage-4 > babel-plugin-transform-async-to-generator > babel-helper-remap-async-to-generator > babel-helper-function-name > babel-traverse > lodash:
-        reason: None given
-        expires: '2018-03-19T14:49:27.965Z'
-    - ava > @ava/babel-preset-stage-4 > babel-plugin-transform-async-to-generator > babel-helper-remap-async-to-generator > babel-helper-function-name > babel-helper-get-function-arity > babel-types > lodash:
-        reason: None given
-        expires: '2018-03-19T14:49:27.965Z'
-    - ava > @ava/babel-preset-stage-4 > babel-plugin-transform-async-to-generator > babel-helper-remap-async-to-generator > babel-helper-function-name > babel-types > lodash:
-        reason: None given
-        expires: '2018-03-19T14:49:27.965Z'
-  'npm:debug:20170905':
-    - ava > chokidar > fsevents > node-pre-gyp > tar-pack > debug:
-        reason: None given
-        expires: '2018-03-19T14:49:27.970Z'
-  'npm:hawk:20160119':
-    - coveralls > log-driver > codecov.io > request > hawk:
-        reason: None given
-        expires: '2018-03-19T14:49:27.970Z'
-  'npm:minimatch:20160620':
-    - imgur > glob > minimatch:
-        reason: None given
-        expires: '2018-03-19T14:49:27.970Z'
-  'npm:request:20160119':
-    - coveralls > log-driver > codecov.io > request:
-        reason: None given
-        expires: '2018-03-19T14:49:27.970Z'
-  'npm:tough-cookie:20170905':
-    - ava > chokidar > fsevents > node-pre-gyp > request > tough-cookie:
-        reason: None given
-        expires: '2018-03-19T14:49:27.970Z'
-  'npm:http-signature:20150122':
-    - coveralls > log-driver > codecov.io > request > http-signature:
-        reason: None given
-        expires: '2018-03-19T14:49:27.971Z'
-  'npm:mime:20170907':
-    - coveralls > log-driver > codecov.io > request > form-data > mime:
-        reason: None given
-        expires: '2018-03-19T14:49:27.972Z'
-  'npm:qs:20170213':
-    - coveralls > log-driver > codecov.io > request > qs:
-        reason: None given
-        expires: '2018-03-19T14:49:27.972Z'
-  'npm:tunnel-agent:20170305':
-    - coveralls > log-driver > codecov.io > request > tunnel-agent:
-        reason: None given
-        expires: '2018-03-19T14:49:27.972Z'
+        expires: '2018-04-26T09:15:07.591Z'
 # patches apply the minimum changes required to fix a vulnerability
 patch:
   'npm:debug:20170905':
     - ava > chokidar > fsevents > node-pre-gyp > tar-pack > debug:
-        patched: '2018-02-17T08:04:49.200Z'
+        patched: '2018-03-27T09:14:24.125Z'
   'npm:minimatch:20160620':
     - imgur > glob > minimatch:
-        patched: '2018-02-17T08:04:49.200Z'
+        patched: '2018-03-27T09:14:24.125Z'
   'npm:tough-cookie:20170905':
     - ava > chokidar > fsevents > node-pre-gyp > request > tough-cookie:
-        patched: '2018-02-17T08:04:49.200Z'
+        patched: '2018-03-27T09:14:24.125Z'
