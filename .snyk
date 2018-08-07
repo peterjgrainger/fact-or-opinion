@@ -1,11 +1,14 @@
 # Snyk (https://snyk.io) policy file, patches or ignores known vulnerabilities.
-version: v1.10.2
+version: v1.12.0
 # ignores vulnerabilities until expiry date; change duration by modifying expiry date
 ignore:
   'npm:braces:20180219':
     - nyc > micromatch > braces:
         reason: None given
         expires: '2018-04-26T09:15:07.590Z'
+      ava > chokidar > anymatch > micromatch > braces:
+        reason: None given
+        expires: '2018-09-06T08:31:35.849Z'
     - nyc > test-exclude > micromatch > braces:
         reason: None given
         expires: '2018-04-26T09:15:07.590Z'
@@ -65,14 +68,57 @@ ignore:
     - nyc > istanbul-lib-instrument > babel-template > lodash:
         reason: None given
         expires: '2018-04-26T09:15:07.591Z'
+  'npm:cryptiles:20180710':
+    - ava > chokidar > fsevents > node-pre-gyp > hawk > cryptiles:
+        reason: None given
+        expires: '2018-09-06T08:31:35.849Z'
+    - ava > chokidar > fsevents > node-pre-gyp > request > hawk > cryptiles:
+        reason: None given
+        expires: '2018-09-06T08:31:35.849Z'
+  'npm:deep-extend:20180409':
+    - ava > chokidar > fsevents > node-pre-gyp > rc > deep-extend:
+        reason: None given
+        expires: '2018-09-06T08:31:35.849Z'
+  'npm:extend:20180424':
+    - ava > chokidar > fsevents > node-pre-gyp > request > extend:
+        reason: None given
+        expires: '2018-09-06T08:31:35.849Z'
+  'npm:sshpk:20180409':
+    - ava > chokidar > fsevents > node-pre-gyp > request > http-signature > sshpk:
+        reason: None given
+        expires: '2018-09-06T08:31:35.849Z'
+  'npm:utile:20180614':
+    - prompt > utile:
+        reason: None given
+        expires: '2018-09-06T08:31:35.849Z'
 # patches apply the minimum changes required to fix a vulnerability
 patch:
   'npm:debug:20170905':
     - ava > chokidar > fsevents > node-pre-gyp > tar-pack > debug:
-        patched: '2018-03-27T09:14:24.125Z'
+        patched: '2018-08-07T08:30:51.273Z'
   'npm:minimatch:20160620':
     - imgur > glob > minimatch:
-        patched: '2018-03-27T09:14:24.125Z'
+        patched: '2018-08-07T08:30:51.273Z'
   'npm:tough-cookie:20170905':
     - ava > chokidar > fsevents > node-pre-gyp > request > tough-cookie:
-        patched: '2018-03-27T09:14:24.125Z'
+        patched: '2018-08-07T08:30:51.273Z'
+  'npm:hoek:20180212':
+    - ava > chokidar > fsevents > node-pre-gyp > hawk > boom > hoek:
+        patched: '2018-08-07T08:30:51.273Z'
+    - ava > chokidar > fsevents > node-pre-gyp > hawk > sntp > hoek:
+        patched: '2018-08-07T08:30:51.273Z'
+    - ava > chokidar > fsevents > node-pre-gyp > request > hawk > hoek:
+        patched: '2018-08-07T08:30:51.273Z'
+    - ava > chokidar > fsevents > node-pre-gyp > hawk > cryptiles > boom > hoek:
+        patched: '2018-08-07T08:30:51.273Z'
+    - ava > chokidar > fsevents > node-pre-gyp > request > hawk > boom > hoek:
+        patched: '2018-08-07T08:30:51.273Z'
+    - ava > chokidar > fsevents > node-pre-gyp > request > hawk > sntp > hoek:
+        patched: '2018-08-07T08:30:51.273Z'
+    - ava > chokidar > fsevents > node-pre-gyp > request > hawk > cryptiles > boom > hoek:
+        patched: '2018-08-07T08:30:51.273Z'
+    - ava > chokidar > fsevents > node-pre-gyp > hawk > hoek:
+        patched: '2018-08-07T08:30:51.273Z'
+  'npm:stringstream:20180511':
+    - ava > chokidar > fsevents > node-pre-gyp > request > stringstream:
+        patched: '2018-08-07T08:30:51.273Z'

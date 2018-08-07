@@ -9,15 +9,13 @@
     "precommit": "npm run build && npm test && npm run tslint",
     "tslint": "tslint src/**/*.ts{,x}",
     "test": "npm run build && ava",
-    "security": "snyk test || true",
+    "security": "npm audit|| true",
     "init": "ask init && now login",
     "create-skill": "node js/skill-upload/create-skill-json.js",
     "deploy:now": "now --public && now alias",
     "deploy:aws": "npm run create-skill && cd app && ask deploy",
     "deploy": "npm run build && npm run deploy:now && npm run deploy:aws",
     "start": "node js/server/express-app.js",
-    "snyk-protect": "snyk protect",
-    "prepare": "npm run snyk-protect",
     "ask:testing": "node js/helpers/open-ask-console",
     "ask:enable": "node js/skill-upload/enable-skill.js"
   },
@@ -60,27 +58,27 @@
   },
   "homepage": "https://github.com/TheSmokingGnu/alexa-skill-boilerplate#readme",
   "devDependencies": {
-    "ask-cli": "^1.1.0",
+    "ask-cli": "^1.4.1",
     "husky": "^0.14.3",
-    "now": "^10.2.1",
-    "opn": "^5.2.0",
-    "tslint": "^5.9.1"
+    "now": "^11.3.8",
+    "opn": "^5.3.0",
+    "tslint": "^5.11.0"
   },
   "dependencies": {
-    "@types/node": "^9.4.0",
-    "alexa-app": "^4.2.1",
+    "@types/node": "^10.5.7",
+    "alexa-app": "^4.2.2",
     "alexa-utterances": "^0.2.1",
     "ava": "^0.25.0",
-    "clipboardy": "^1.2.2",
-    "coveralls": "^3.0.0",
-    "express": "^4.16.2",
-    "express-pino-logger": "^3.0.1",
+    "clipboardy": "^1.2.3",
+    "coveralls": "^3.0.2",
+    "express": "^4.16.3",
+    "express-pino-logger": "^3.0.2",
     "imgur": "^0.2.1",
-    "nyc": "^11.4.1",
+    "nyc": "^12.0.2",
     "prompt": "^1.0.0",
     "rimraf": "^2.6.2",
-    "snyk": "^1.65.1",
-    "typescript": "^2.6.2"
+    "snyk": "^1.90.0",
+    "typescript": "^3.0.1"
   },
   "snyk": true
 }
