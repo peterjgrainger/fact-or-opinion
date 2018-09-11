@@ -5,6 +5,6 @@ export interface IntentDefinition {
     name: string;
     slots: Slot[];
     utterances: string[];
-    action(alexaRequest: request, alexaResponse: response): response;
+    action(alexaRequest: request, alexaResponse: response): response | Promise<response>;
     schema();
 }

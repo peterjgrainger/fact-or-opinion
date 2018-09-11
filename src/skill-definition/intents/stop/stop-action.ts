@@ -1,5 +1,7 @@
-import { request, response } from "alexa-app/types";
-import { PublishingInformation } from "../../../publishing-information";
+import { request, response, session } from "alexa-app/types";
+import { GAME_STATE, GameStatus } from "../../models/game-status";
+import { updateDb } from "../../models/persist";
+import { endPhrase } from "../../models/statements";
 
 /**
  * Required alexa intent.  Only change the wording after
@@ -11,6 +13,9 @@ import { PublishingInformation } from "../../../publishing-information";
  * @param response alexa-app response type
  */
 export function stopAction(alexaRequest: request, alexaResponse: response) {
-    return alexaResponse.say(`Stopped ${PublishingInformation.APP_NAME} skill`)
+    const gameStatus = new GameStatus(alexaRequest.getSession(), GAME_STATE.NEW_GAME);
+    updateDb(alexaRequest.userId, gameStatus);
+    // tslint:disable-next-line:max-line-length
+    return alexaResponse.say(endPhrase(alexaRequest.hasSession(), +gameStatus.correctAnswers, gameStatus.tries))
                         .shouldEndSession(true);
 }

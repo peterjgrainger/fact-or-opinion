@@ -49,6 +49,15 @@ function setPublishingInfoForLocales(userSetInfo: any, links : ImageLinks) {
           userSetInfo.EXAMPLE_PHRASES_2,
           userSetInfo.EXAMPLE_PHRASES_3
         ],
+        keywords: [
+          userSetInfo.KEYWORD_1,
+          userSetInfo.KEYWORD_2,
+          userSetInfo.KEYWORD_3,
+          userSetInfo.KEYWORD_4,
+          userSetInfo.KEYWORD_5,
+          userSetInfo.KEYWORD_6,
+          userSetInfo.KEYWORD_7,
+        ],
         name: userSetInfo.NAME,
         description: userSetInfo.DESCRIPTION,
         smallIconUri: links.small,

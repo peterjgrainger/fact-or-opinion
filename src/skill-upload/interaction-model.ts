@@ -1,8 +1,5 @@
 import {intent} from "alexa-app/types";
 import * as utterances from "alexa-utterances";
-import { inspect } from "util";
-import { Intent } from "../skill-definition/models/intents/intent";
-import { Slot } from "../skill-definition/models/slots/slot";
 import { getSlotTypesForModel, slotTypes } from "../skill-definition/models/slots/slot-types";
 
 /**

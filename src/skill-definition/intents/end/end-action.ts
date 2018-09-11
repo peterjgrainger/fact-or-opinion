@@ -1,5 +1,5 @@
 import { request, response } from "alexa-app/types";
-import { PublishingInformation } from "../../../publishing-information";
+import { stopAction } from "../stop/stop-action";
 
 /**
  * Required alexa intent.  Only change the wording after
@@ -11,6 +11,5 @@ import { PublishingInformation } from "../../../publishing-information";
  * @param response alexa-app response type
  */
 export function endAction(alexaRequest: request, alexaResponse: response) {
-    return alexaResponse.say(`Ended ${PublishingInformation.APP_NAME} skill`)
-                        .shouldEndSession(true);
+    return stopAction(alexaRequest, alexaResponse);
 }

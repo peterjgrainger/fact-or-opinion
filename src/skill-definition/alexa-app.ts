@@ -1,9 +1,10 @@
 import { app } from 'alexa-app';
 import { AmazonDefault } from './intents/amazon-default/amazon-default';
 import { endAction } from './intents/end/end-action';
+import { Fact } from './intents/fact/fact';
 import { fallbackAction } from './intents/fallback/fallback';
-import { HelloWorld } from './intents/hello-world/hello-world';
 import { helpAction } from './intents/help/help-action';
+import { Opinion } from './intents/opinion/opinion';
 import { stopAction } from './intents/stop/stop-action';
 import { launch } from './launch/launch';
 import { IntentDefinition } from './models/intents/intent-definition';
@@ -29,7 +30,8 @@ export class AlexaApp extends app {
         this.addIntent(new AmazonDefault('cancel', endAction));
         this.addIntent(new AmazonDefault('help', helpAction));
         this.addIntent(new AmazonDefault('Fallback', fallbackAction));
-        this.addIntent(new HelloWorld());
+        this.addIntent(new Fact());
+        this.addIntent(new Opinion());
     }
 
     /**
