@@ -8,8 +8,8 @@ const tryMotivation = [
 
 const goodWords = [
     'Amazing',
-    'Woot woot',
     'Incredible',
+    'Good work',
 ];
 
 export function motivation() {
@@ -19,10 +19,14 @@ export function motivation() {
 }
 
 export function patOnTheBack(gameStatus: GameStatus) {
-    if (+gameStatus.correctAnswers % 5 === 0 && gameStatus.tries % 5 === 0) {
-        const randomGoodWord = goodWords[Math.floor(Math.random() * goodWords.length)];
+
+    const randomGoodWord = goodWords[Math.floor(Math.random() * goodWords.length)];
+
+    if (gameStatus.correctAnswers % 7 === 0 && gameStatus.tries % 7 === 0) {
 
         return `${randomGoodWord} you got ${gameStatus.tries} out of ${gameStatus.correctAnswers}.  `;
+    } else if (gameStatus.streak % 5 === 0) {
+        return `${randomGoodWord} you got ${gameStatus.streak} in a row.  `;
     }
 
     return '';

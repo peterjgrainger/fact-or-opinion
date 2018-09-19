@@ -8,22 +8,22 @@ import { endPhrase, isEnd, newStatement, Statement, statements, StatementType } 
 
 export function commonAction(alexaRequest: request, alexaResponse: response, statementType: StatementType) {
     if (!alexaRequest.hasSession()) {
-        return startNewGame(alexaRequest, alexaResponse, undefined);
+        return startNewGame(alexaRequest, alexaResponse);
     }
 
     const session = alexaRequest.getSession();
     const gameStatus = new GameStatus(session, GAME_STATE.CONTINUE);
     const isCorrect = checkAnswer(statementType, gameStatus);
-
     const answeredStatement = statements.filter((value) => value.text === gameStatus.currentQuestion);
-
     const result = getResultText(isCorrect, answeredStatement[0]);
 
     gameStatus.tries += 1;
     gameStatus.correctAnswers = isCorrect ? gameStatus.correctAnswers + 1 : gameStatus.correctAnswers;
+    gameStatus.streak = isCorrect ? gameStatus.streak + 1 : gameStatus.streak;
 
     session.set(SessionNames[SessionNames.TRIES], gameStatus.tries);
     session.set(SessionNames[SessionNames.CORRECT_ANSWERS], gameStatus.correctAnswers);
+    session.set(SessionNames[SessionNames.STREAK], gameStatus.streak);
 
     if (isEnd(gameStatus.askedQuestions)) {
         gameStatus.gameState = GAME_STATE.ALL_QUESTIONS_ASKED;

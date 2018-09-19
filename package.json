@@ -5,7 +5,6 @@
   "main": "index.js",
   "scripts": {
     "build": "rimraf js && tsc",
-    "precommit": "npm run build && npm test && npm run tslint",
     "tslint": "tslint src/**/*.ts{,x}",
     "test": "npm run build && ava",
     "security": "npm audit|| true",

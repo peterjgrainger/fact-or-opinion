@@ -6,7 +6,7 @@ import { newStatement } from "./statements";
 const firstTimeMessage = 'I see this is your first time here.  Say, help, if you aren\'t sure at any time';
 const returning = 'Hi there again';
 
-export async function startNewGame(alexaRequest: request, alexaResponse: response, gameStatus: GameStatus) {
+export async function startNewGame(alexaRequest: request, alexaResponse: response, gameStatus?: GameStatus) {
     const session = alexaRequest.getSession();
     const keepAskedQuestions = gameStatus && gameStatus.gameState === GAME_STATE.NEW_GAME;
 
